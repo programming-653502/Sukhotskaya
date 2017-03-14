@@ -31,13 +31,6 @@ int main()
 		<<  "7. Get information about the program.\n"
 		<<  "0. Exit.\n";
 		cin >> choise;
-		while(!(cin >> choise))
-		{
-			cin.clear();
-			cin.ignore((numeric_limits<std::streamsize>::max)(),'\n');
-			cout << "Incorrect. Try again. ";   		
-		}
-
 		switch (choise)
 		{
 			case 1:
