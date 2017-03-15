@@ -28,7 +28,7 @@ int main()
 			break;
 		}
 	}
-	if (value1 > 1 || value2 > 1)
+	if (fabs(value1) > 1 + e || fabs(value2) > 1 + e)
 	{
 		cout << "The value of factorial is too large to keep in memory. Try again." << endl;
 		goto begin;
