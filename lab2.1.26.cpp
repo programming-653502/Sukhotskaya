@@ -245,7 +245,7 @@ void integrate()
 
 void value()
 {
-		double x, val;
+		double x, val = 0;
 		cout << "Enter the value of x: " << endl;
 		cin >> x;
 		for (int i = 0; i < 4; i++)
