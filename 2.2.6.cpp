@@ -67,10 +67,12 @@ double iteration (double x, int n)
 
 double recursion (double x, int n)
 {
-	if (n == 0)
-		return 0;
-		double result = powl((-1), n - 1) * powl(x, 2 * n - 1) / factorial(2 * n - 1);
-		return result + recursion(x, n - 1);
+	if (n != 0)
+		{
+			double result = powl((-1), n - 1) * powl(x, 2 * n - 1) / factorial(2 * n - 1);
+			return result + recursion(x, n - 1);
+		}
+	else return 0;
 }
 
 long double factorial(int n)
