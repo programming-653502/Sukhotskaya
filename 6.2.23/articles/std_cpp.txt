@@ -1,0 +1,15 @@
+What is namespace?
+It is a container for a set of identifiers. It provide a level of direction to specific identifiers, thus making it possible to distinguish between identifiers with the same exact name. For example, a surname could be thought of as a namespace that makes it possible to distinguish people who have the same given name. For further details go to this Namespace in C++ | Set 1 (Introduction) .
+
+Why we need namespaces?
+Assume there is two libraries named A and B, both have get_data function in it. You included these two libraries in your code. Now you call the get_data function, then compiler won’t know which one to call, and you’ll get an error. Now how we can fix this issue. In C lang we can fix by adding a prefix to start of every function like A_get_data and B_get_data,but is painful. The solution of this problem comes in C++ in the form of namespace. It is more flexible way of adding prefixes. So now you can call the functions as A::get_data and B::get_data where :: is scope resolution operator.
+
+Now come to point, what does ‘using namespace std’ do???
+
+Why we mention this in our code?
+Now suppose in the above example, if you are going to use bunch of code of A library then its going to boring to add prefix every time while calling the functions of A library. Then what is the solution of this problem here is the solution you can add “using namespace A” at the top of your file, and then just call get_data without using A prefix for the rest of code.
+
+Is ‘using namespace std’ is necessary to mention?
+The answer is big NO.
+
+The std namespace is special, The built in C++ library routines are kept in the standard namespace. That includes stuff like cout, cin, string, vector, map, etc. Because these tools are used so commonly, it’s popular to add “using namespace std” at the top of your source code so that you won’t have to type the std:: prefix constantly. It only make our task easy, It is not not necessary.

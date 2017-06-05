@@ -1,0 +1,6 @@
+language: c++
+topic: lab
+date: 27.03.2017
+articles:
+-std_cpp.txt
+comments: 

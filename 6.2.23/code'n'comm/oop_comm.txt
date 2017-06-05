@@ -1,0 +1,7 @@
+language: c#
+topic: oop
+date: 30.05.2017
+articles:
+-oop_c#.txt
+-constructor.txt
+comments: 

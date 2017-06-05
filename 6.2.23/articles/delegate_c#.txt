@@ -1,0 +1,10 @@
+The declaration of a delegate type is similar to a method signature. It has a return value and any number of parameters of any type:
+
+public delegate void TestDelegate(string message);  
+public delegate int TestDelegate(MyType m, long num);
+  
+A delegate is a reference type that can be used to encapsulate a named or an anonymous method. Delegates are similar to function pointers in C++; however, delegates are type-safe and secure. For applications of delegates, see Delegates and Generic Delegates.
+
+Delegates are the basis for Events.
+A delegate can be instantiated by associating it either with a named or anonymous method. For more information, see Named Methods and Anonymous Methods.
+The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see Variance in Delegates. For use with anonymous methods, the delegate and the code to be associated with it are declared together. Both ways of instantiating delegates are discussed in this section.
